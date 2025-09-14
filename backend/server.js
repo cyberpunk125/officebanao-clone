@@ -4,7 +4,7 @@ import cors from "cors";
 import partnerRoutes from "./routes/partnerRoutes.js";
 import "./initDb.js"; // run DB initialization
 
-
+  const app = express();
 
 // Middlewares
 app.use(cors({
@@ -15,7 +15,8 @@ app.use(cors({
     const allowedOrigins = [
       'http://localhost:3000', // Local development
       'http://localhost:3001', // Alternative local port
-      'https://officebanao-clone.vercel.app', // Vercel deployment
+      'https://officebanao-clone.vercel.app', // Main Vercel URL
+      'https://officebanao-clone-sshikhar99s-projects.vercel.app', // Vercel preview URL
       'https://www.officebanao-clone.vercel.app' // Vercel with www
     ];
     
